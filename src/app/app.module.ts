@@ -6,12 +6,16 @@ import {SidebarService} from "./menus/services/sidebar.service";
 import {ConstantsService} from "./commons/services/constants.service";
 import {ChatList} from "./layout/component/chat-list.component";
 import {ChatListService} from "./layout/service/chat-list.service";
+import {Room} from "./layout/component/room.component";
+import {ButtonList} from "./customs/component/button-list.component";
 
 @NgModule({
   declarations: [
     App,
     LeftSidebar,
-    ChatList
+    ChatList,
+    Room,
+    ButtonList
   ],
   imports: [
     IonicModule.forRoot(App)
@@ -20,7 +24,9 @@ import {ChatListService} from "./layout/service/chat-list.service";
   entryComponents: [
     App,
     LeftSidebar,
-    ChatList
+    ChatList,
+    Room,
+    ButtonList
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, SidebarService, ConstantsService, ChatListService]
 })

@@ -1,0 +1,50 @@
+@import "../../customs/styles/variables";
+.message-textarea {
+  textarea {
+    resize: none;
+    width: calc(100% - 5%);
+  }
+}
+
+.item-down {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  border: $border-1px;
+  padding-left: 5%;
+  padding-right: 15%;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.custom-button {
+  border: none;
+  display: inline-block;
+  float: right;
+  margin-right: 35px;
+  margin-bottom: 10px;
+
+  &:hover {
+    ion-icon {
+      color: $gray;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .custom-button {
+    margin-right: 15px;
+  }
+}
+
+.icon-toggle {
+  color: black;
+  font-size: 2em;
+}

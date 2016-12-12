@@ -1,0 +1,5 @@
+<div>
+    <span ion-item *ngFor="let button of buttonList" (click)="buttonTapped($event, button)">
+        <ion-icon name="{{button.icon}}"></ion-icon>
+    </span>
+</div>

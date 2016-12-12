@@ -26,7 +26,13 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "0.0.45",
-    "typescript": "2.0.6"
+    "typescript": "2.0.6",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-sass": "2.3.2",
+    "gulp-clean-css": "2.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-run": "1.7.1"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",

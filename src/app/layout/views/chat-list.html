@@ -9,11 +9,8 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let chat of names" (click)="itemTapped($event, chat)">
+    <button ion-item *ngFor="let chat of names" (click)="chatTapped($event, chat)">
       {{chat.sender.name}}
     </button>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.sender.name}}</b>
-  </div>
 </ion-content>

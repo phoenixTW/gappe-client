@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 import {ChatListService} from "../service/chat-list.service";
+import {Room} from "./room.component";
 
 @Component({
   selector: "chat-list",
@@ -9,17 +10,15 @@ import {ChatListService} from "../service/chat-list.service";
 })
 
 export class ChatList {
-  selectedItem: any;
   names: Array<{sender: Object}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private chatListService: ChatListService) {
-    this.selectedItem = navParams.get('sender');
     this.names = chatListService.getChatList();
   }
 
-  itemTapped(event, sender) {
-    this.navCtrl.push(ChatList, {
-      sender: sender
+  chatTapped(event, chat) {
+    this.navCtrl.push(Room, {
+      chat: chat
     });
   }
 }
